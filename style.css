@@ -48,7 +48,7 @@ header {
 
 /* Style the grey header */
 .grey-header {
-  background-color: #f2f2f2; /* Light grey background */
+  background-color: ##fcfcfc; /* Light grey background */
   text-align: center;
   padding: 20px 0;
   color: #333; /* Dark grey text color */
