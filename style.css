@@ -64,3 +64,13 @@ header {
   font-size: 16px;
   color: #333; /* Ensure text color applies to the p element */
 }
+
+/* Style the banner section */
+.banner-section {
+  text-align: center; /* Center align the image */
+  padding: 20px 0; /* Add padding around the image */
+}
+
+.banner-section img {
+  max-width: 100%; /* Ensure the image doesn't exceed its container width */
+}
