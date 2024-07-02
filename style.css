@@ -27,8 +27,7 @@ header {
 }
 
 .nav-list {
-  display: flex;
-  list-style-type: none;
+  display: flex; /* Display navigation items horizontally */
 }
 
 .nav-item {
