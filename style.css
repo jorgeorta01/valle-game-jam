@@ -1,3 +1,4 @@
+/* Reset default styles and set global styles */
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +6,42 @@
   text-decoration: none;
   list-style: none;
   scroll-behavior: smooth;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif; /* Ensure 'Poppins' font or fallback is used */
 }
+
+/* Define root level CSS variables for easy theming */
 :root {
   --background: rgb(24, 24, 24);
   --second-background: rgb(21, 21, 21);
+}
+
+/* Style the header/navigation */
+header {
+  background-color: var(--background);
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav-item a:hover {
+  background-color: var(--second-background);
+  border-radius: 5px;
 }
