@@ -74,3 +74,8 @@ header {
 .banner-section img {
   max-width: 100%; /* Ensure the image doesn't exceed its container width */
 }
+
+.faq-header {
+  font-size: 16px;
+}
+
