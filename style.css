@@ -76,6 +76,9 @@ header {
 }
 
 .faq-header {
-  font-size: 16px;
+  background-color: #fcfcfc; /* Light grey background */
+  text-align: center;
+  padding: 20px 0;
+  color: #333; /* Dark grey text color */
 }
 
