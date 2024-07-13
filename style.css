@@ -89,6 +89,10 @@ header {
   padding: 20px 0;
   color: #333; /* Dark grey text color */
 }
+/* Increase specificity */
+body .general-section {
+  text-align: left; /* Ensure left alignment */
+}
 
 .participation-section {
   background-color: #fcfcfc;
