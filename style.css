@@ -46,11 +46,6 @@ header .nav-item a:hover {
   border-radius: 5px;
 }
 
-/* Center align the FAQ section */
-.faq-section {
-  text-align: center;
-}
-
 /* Style each FAQ section */
 .faq-section h1 {
   margin-bottom: 20px;
