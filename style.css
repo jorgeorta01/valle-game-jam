@@ -57,19 +57,3 @@ header .nav-item a:hover {
   margin-top: 20px;
 }
 
-/* Style the general and participation sections */
-.participation-section {
-  background-color: #fcfcfc; /* Light grey background */
-  padding: 10px;
-  color: #333; /* Dark grey text color */
-  margin-bottom: 20px; /* Add some spacing between sections */
-}
-
-/* Style the general and participation sections */
-.faq-contact {
-  background-color: #fcfcfc; /* Light grey background */
-  padding: 5px;
-  color: #333; /* Dark grey text color */
-  margin-bottom: 20px; /* Add some spacing between sections */
-}
-
