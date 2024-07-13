@@ -48,19 +48,14 @@ header .nav-item a:hover {
 
 /* Style each FAQ section */
 .faq-section h1 {
-  margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
 }
 
 /* Style the general and participation sections */
-.general-section {
-  background-color: #fcfcfc; /* Light grey background */
-  padding: 10px;
-  color: #333; /* Dark grey text color */
-  margin-bottom: 20px; /* Add some spacing between sections */
+.general-section h3 {
+margin-top: 20px;
 }
-
 
 /* Style the general and participation sections */
 .participation-section {
