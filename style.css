@@ -82,3 +82,8 @@ header {
   color: #333; /* Dark grey text color */
 }
 
+/* Add spacing between FAQ questions */
+.general-section h3,
+.participation-section h3 {
+  margin-top: 20px; /* Adjust the spacing as needed */
+}
