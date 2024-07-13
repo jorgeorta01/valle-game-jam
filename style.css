@@ -21,87 +21,44 @@ header {
   padding: 10px 0;
 }
 
-.navbar {
+header .navbar {
   display: flex;
   justify-content: center;
 }
 
-.nav-list {
+header .nav-list {
   display: flex; /* Display navigation items horizontally */
 }
 
-.nav-item {
+header .nav-item {
   margin: 0 10px;
 }
 
-.nav-item a {
+header .nav-item a {
   color: white;
   text-decoration: none;
   padding: 10px;
   font-size: 12px;
 }
 
-.nav-item a:hover {
+header .nav-item a:hover {
   background-color: var(--second-background);
   border-radius: 5px;
 }
 
-/* Style the grey header */
-.grey-header {
-  background-color: #fcfcfc; /* Light grey background */
-  text-align: center;
-  padding: 20px 0;
-  color: #333; /* Dark grey text color */
-}
-
-.grey-header h1 {
-  margin-bottom: 10px;
-  font-size: 28px;
-  color: #333; /* Ensure text color applies to the h1 element */
-}
-
-.grey-header p {
-  font-size: 16px;
-  color: #333; /* Ensure text color applies to the p element */
-}
-
-/* Style the banner section */
-.banner-section {
-  text-align: center; /* Center align the image */
-  padding: 20px 0; /* Add padding around the image */
-}
-
-.banner-section img {
-  max-width: 100%; /* Ensure the image doesn't exceed its container width */
-}
-
-.faq-header {
-  background-color: #fcfcfc; /* Light grey background */
-  text-align: center;
-  padding: 20px 0;
-  color: #333; /* Dark grey text color */
-}
-
 /* Add spacing between FAQ questions */
-.general-section {
+.general-section, .participation-section, .faq-contact {
   background-color: #fcfcfc; /* Light grey background */
   text-align: left;
   padding: 20px 0;
   color: #333; /* Dark grey text color */
 }
+
 /* Increase specificity */
 body .general-section {
   text-align: left; /* Ensure left alignment */
 }
 
-.participation-section {
-  background-color: #fcfcfc;
-  text-align: left;
-  padding: 20px 0;
-  color: #333;
-}
-
-/* Increase specificity */
 body .participation-section {
   text-align: left; /* Ensure left alignment */
 }
