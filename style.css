@@ -62,3 +62,11 @@ body .general-section {
 body .participation-section {
   text-align: left; /* Ensure left alignment */
 }
+
+.faq-section {
+  text-align: center;
+}
+
+.faq-section h1 {
+  margin-bottom: 20px;
+}
