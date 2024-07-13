@@ -89,9 +89,14 @@ header {
   padding: 20px 0;
   color: #333; /* Dark grey text color */
 }
+
+.general-section h3{
+  padding: 20px 0;
+}
+
 .participation-section {
   background-color: #fcfcfc; /* Light grey background */
-  text-align: right;
+  text-align: left;
   padding: 20px 0;
   color: #333; /* Dark grey text color */
 }
