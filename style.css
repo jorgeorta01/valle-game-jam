@@ -46,27 +46,20 @@ header .nav-item a:hover {
   border-radius: 5px;
 }
 
-/* Add spacing between FAQ questions */
-.general-section, .participation-section, .faq-contact {
-  background-color: #fcfcfc; /* Light grey background */
-  text-align: left;
-  padding: 20px 0;
-  color: #333; /* Dark grey text color */
-}
-
-/* Increase specificity */
-body .general-section {
-  text-align: left; /* Ensure left alignment */
-}
-
-body .participation-section {
-  text-align: left; /* Ensure left alignment */
-}
-
+/* Center align the FAQ section */
 .faq-section {
   text-align: center;
 }
 
+/* Style each FAQ section */
 .faq-section h1 {
   margin-bottom: 20px;
+}
+
+/* Style the general and participation sections */
+.general-section, .participation-section, .faq-contact {
+  background-color: #fcfcfc; /* Light grey background */
+  padding: 20px;
+  color: #333; /* Dark grey text color */
+  margin-bottom: 20px; /* Add some spacing between sections */
 }
