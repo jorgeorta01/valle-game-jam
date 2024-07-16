@@ -13,6 +13,19 @@
 :root {
   --background: rgb(24, 24, 24);
   --second-background: rgb(21, 21, 21);
+  --primary-color: #4CAF50; /* Primary color for highlights */
+  --secondary-color: #f4f4f4; /* Light background for containers */
+  --text-color: white;
+  --button-color: #FF9800; /* Bright orange color for button */
+  --button-hover-color: white;
+  --heading-color: #FF9800; /* Bright orange color for headings */
+}
+
+/* Style the body */
+body {
+  background-color: var(--background);
+  color: var(--text-color);
+  padding: 20px;
 }
 
 /* Style the header/navigation */
@@ -46,14 +59,61 @@ header .nav-item a:hover {
   border-radius: 5px;
 }
 
-/* Style each FAQ section */
-.faq-section h1 {
+/* Style each section header */
+.faq-section h1, .content h1, .content h2 {
   margin-bottom: 20px;
   text-align: center;
+  color: var(--heading-color); /* Set headings to bright orange */
 }
 
-/* Style the general and participation sections */
-.general-section h3 {
-  margin-top: 10px;
+/* Add spacing and background for event info */
+.event-info {
+  background-color: var(--second-background);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Add margin to the paragraph in event info */
+.event-info p {
+  margin-bottom: 20px;
+}
+
+/* Add styling to unordered list in event info */
+.event-info ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Style the registration button section */
+.registration-button {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: var(--button-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.register-btn:hover {
+  background-color: var(--button-hover-color);
+  color: var(--button-color);
+}
+
+/* Style the footer */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--text-color);
+}
