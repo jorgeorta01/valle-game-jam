@@ -111,6 +111,23 @@ header .nav-item a:hover {
   color: var(--button-color);
 }
 
+/* Style the FAQ sections */
+.general-section, .participation-section {
+  padding: 20px;
+  background-color: var(--second-background); /* Background color for sections */
+  border-radius: 8px; /* Rounded corners for sections */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow for a lifted effect */
+}
+
+/* Add space between FAQ sections */
+.general-section {
+  margin-bottom: 40px; /* Space below General Questions section */
+}
+
+.participation-section {
+  margin-top: 40px; /* Space above Questions About Participation section */
+}
+
 /* Style the footer */
 footer {
   text-align: center;
