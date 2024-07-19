@@ -68,12 +68,13 @@ header .nav-item a:hover {
 
 /* Add spacing and background for event info */
 .event-info {
-  background-color: var(--second-background);
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  background-color: var(--second-background); /* Background color for sections */
+  border-radius: 8px; /* Rounded corners for sections */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow for a lifted effect */
+  margin: 0 auto; /* Center the section horizontally */
   width: 80%;
+  max-width: 800px; /* Adjust the max-width as needed */
 }
 
 /* Add margin to the paragraph in event info */
