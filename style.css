@@ -119,7 +119,7 @@ header .nav-item a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow for a lifted effect */
   margin: 0 auto; /* Center the section horizontally */
   width: 80%;
-  max-width: 500px; /* Adjust the max-width as needed */
+  max-width: 800px; /* Adjust the max-width as needed */
 }
 
 /* Add space between FAQ sections */
