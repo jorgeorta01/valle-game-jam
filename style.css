@@ -113,7 +113,7 @@ header .nav-item a:hover {
 
 /* Style the FAQ sections */
 .general-section, .participation-section {
-  padding: 20px;
+  padding: 40px;
   background-color: var(--second-background); /* Background color for sections */
   border-radius: 8px; /* Rounded corners for sections */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow for a lifted effect */
