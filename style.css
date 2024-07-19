@@ -118,7 +118,8 @@ header .nav-item a:hover {
   border-radius: 8px; /* Rounded corners for sections */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow for a lifted effect */
   margin: 0 auto; /* Center the section horizontally */
-  max-width: 1000px; /* Adjust the max-width as needed */
+  width: 80%;
+  max-width: 500px; /* Adjust the max-width as needed */
 }
 
 /* Add space between FAQ sections */
