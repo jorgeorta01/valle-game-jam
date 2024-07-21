@@ -64,23 +64,11 @@ header .nav-item a:hover {
   text-align: center;
 }
 
-.banner-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px; /* Adjust the height as needed */
-}
-
 /* Style each section header */
 .faq-section h1, .content h1, .content h2 {
   margin-bottom: 20px;
   text-align: center;
   color: var(--heading-color); /* Set headings to bright orange */
-}
-
-.banner-section img {
-  max-width: 100%; /* Ensures the image doesn't exceed its container width */
-  height: auto; /* Maintains aspect ratio */
 }
 
 /* Add spacing and background for event info */
