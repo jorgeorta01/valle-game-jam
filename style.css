@@ -59,9 +59,15 @@ header .nav-item a:hover {
   border-radius: 5px;
 }
 
-/*  Styling for Home  */
+/*  STYLING FOR HOME  */
 .banner-header {
   text-align: center;
+  padding: 20px 0;
+}
+
+.banner-section img {
+  max-width: 100%; /* Ensures the image doesn't exceed its container width */
+  height: auto; /* Maintains aspect ratio */
 }
 
 /* Style each section header */
