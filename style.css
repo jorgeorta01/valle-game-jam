@@ -48,15 +48,17 @@ header .nav-item {
 }
 
 header .nav-item a {
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
   padding: 10px;
   font-size: 12px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 header .nav-item a:hover {
-  background-color: var(--second-background);
-  border-radius: 5px;
+  background-color: var(--background);
+  color: var(--background);
+  border-radius: 10px;
 }
 
 /*  STYLING FOR HOME  */
