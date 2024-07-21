@@ -64,6 +64,11 @@ header .nav-item a:hover {
   text-align: center;
 }
 
+.banner-section img {
+  display: block;
+  margin: 0 auto;
+}
+
 /* Style each section header */
 .faq-section h1, .content h1, .content h2 {
   margin-bottom: 20px;
