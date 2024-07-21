@@ -65,6 +65,10 @@ header .nav-item a:hover {
   padding: 20px 0;
 }
 
+.banner-section {
+  text-align: center; /* Center align content */
+}
+
 .banner-section img {
   max-width: 100%; /* Ensures the image doesn't exceed its container width */
   height: auto; /* Maintains aspect ratio */
