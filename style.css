@@ -59,6 +59,11 @@ header .nav-item a:hover {
   border-radius: 5px;
 }
 
+/*  Styling for Home  */
+.banner-header {
+  text-align: center;
+}
+
 /* Style each section header */
 .faq-section h1, .content h1, .content h2 {
   margin-bottom: 20px;
