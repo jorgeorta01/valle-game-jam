@@ -11,7 +11,7 @@
 
 /* Define root level CSS variables for easy theming */
 :root {
-  --background: rgb(24, 24, 24);
+  --background: rgb(255,241,224);
   --second-background: rgb(21, 21, 21);
   --primary-color: #4CAF50; /* Primary color for highlights */
   --secondary-color: #f4f4f4; /* Light background for containers */
