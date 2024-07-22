@@ -25,7 +25,7 @@
 body {
   background-color: var(--background);
   color: var(--text-color);
-  padding: 20px;
+  padding-top: 10px;
 }
 
 /* Style the header/navigation */
@@ -56,9 +56,9 @@ header .nav-item a {
 }
 
 header .nav-item a:hover {
-  background-color: var(--background);
+  background-color: var(--text-color);
   color: var(--background);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 /*  STYLING FOR HOME  */
@@ -74,6 +74,28 @@ header .nav-item a:hover {
 .banner-section img {
   max-width: 100%; /* Ensures the image doesn't exceed its container width */
   height: auto; /* Maintains aspect ratio */
+  margin-bottom: 5px;
+}
+
+.our-message {
+  padding: 20px;
+  background-color: var(--background); /* Background color for sections */
+  border-radius: 8px; /* Rounded corners for sections */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow for a lifted effect */
+  margin: 0 auto; /* Center the section horizontally */
+  width: 80%;
+  max-width: 800px; /* Adjust the max-width as needed */
+}
+
+.our-message h1 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.schedule {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 /* Style each section header */
@@ -152,7 +174,11 @@ header .nav-item a:hover {
 
 /* Style the footer */
 footer {
-  text-align: center;
-  margin-top: 20px;
-  color: var(--text-color);
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+  color: var(--background);
+  background-color: var(--text-color);
+ 
 }
