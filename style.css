@@ -98,12 +98,29 @@ header .nav-item a:hover {
   text-align: center;
 }
 
-/* Style each section header */
-.faq-section h1, .content h1, .content h2 {
+/*  STYLING FOR REGISTER  */
+.register-title h1 {
   margin-bottom: 20px;
+  margin-top: 20px;
   text-align: center;
-  color: var(--heading-color); /* Set headings to bright orange */
+  color: var(--text-color); 
 }
+/*  STYLING FOR FAQs  */
+.faq-title h1 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+  color: var(--text-color); 
+}
+
+/*  STYLING FOR ABOUT US  */
+.about-title h1 {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-align: center;
+  color: var(--text-color); 
+}
+/* Style each section header */
 
 /* Add spacing and background for event info */
 .event-info {
