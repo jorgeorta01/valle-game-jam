@@ -1,4 +1,4 @@
-/* Reset default styles and set global styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,29 +6,27 @@
   text-decoration: none;
   list-style: none;
   scroll-behavior: smooth;
-  font-family: "Poppins", sans-serif; /* Ensure 'Poppins' font or fallback is used */
+  font-family: "Poppins", sans-serif; 
 }
 
-/* Define root level CSS variables for easy theming */
 :root {
   --background: rgb(255, 241, 224);
-  --second-background: rgb(21, 21, 21);
-  --primary-color: #4CAF50; /* Primary color for highlights */
-  --secondary-color: #f4f4f4; /* Light background for containers */
+  --second-background: rgb(0, 0, 0);
+  --primary-color: #00ff62;
+  --secondary-color: #f4f4f4; 
   --text-color: rgb(57, 18, 6);
-  --button-color: #FF9800; /* Bright orange color for button */
-  --button-hover-color: white;
-  --heading-color: #FF9800; /* Bright orange color for headings */
+  --button-color: #EF5122;
+  --button-hover-color: #972300;
+  --text-hover-color: #ffffff;
 }
 
-/* Style the body */
 body {
   background-color: var(--background);
   color: var(--text-color);
   padding-top: 10px;
+  
 }
 
-/* Style the header/navigation */
 header {
   background-color: var(--background);
   padding: 10px 0;
@@ -37,10 +35,11 @@ header {
 header .navbar {
   display: flex;
   justify-content: center;
+
 }
 
 header .nav-list {
-  display: flex; /* Display navigation items horizontally */
+  display: flex; 
 }
 
 header .nav-item {
@@ -48,6 +47,7 @@ header .nav-item {
 }
 
 header .nav-item a {
+  display: inline-block;
   color: var(--text-color);
   text-decoration: none;
   padding: 10px;
@@ -62,140 +62,231 @@ header .nav-item a:hover {
 }
 
 /*  STYLING FOR HOME  */
-.banner-header {
+/* .banner-header {
   text-align: center;
   padding: 20px 0;
+} */
+.banner-header {
+  padding: 5px;
+  text-align: center;
+  background-color: var(--primary-color);
+  /* border-radius: 8px;  */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);  */
+  margin: 0 auto; 
+  /* width: 100%; */
+  /* max-width: 1000px;  */
+}
+.jam-img{
+  text-align: center; 
 }
 
-.banner-section {
-  text-align: center; /* Center align content */
-}
-
-.banner-section img {
-  max-width: 100%; /* Ensures the image doesn't exceed its container width */
-  height: auto; /* Maintains aspect ratio */
+.jam-img img {
+  max-width: 100%; 
+  height: auto;
   margin-bottom: 5px;
 }
 
 .our-message {
   padding: 20px;
-  background-color: var(--background); /* Background color for sections */
-  border-radius: 8px; /* Rounded corners for sections */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow for a lifted effect */
-  margin: 0 auto; /* Center the section horizontally */
-  width: 80%;
-  max-width: 800px; /* Adjust the max-width as needed */
+  background-color: var(--background);
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  margin: 0 auto; 
+  /* width: 100%; */
+  max-width: 1000px; 
 }
 
-.our-message h1 {
-  margin-top: 20px;
+.our-message h3 {
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.our-message p {
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.format-info {
+  padding: 50px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  display: flex; /* Display children (columns) in a row */
+  justify-content: space-between; /* Distribute columns evenly */
+}
+
+.format-column {
+  flex: 1; /* Each column takes equal space */
+  margin: 0 10px; /* Adjust space between columns */
+  /* text-align: center; */
+}
+
+.format-column h1{
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.format-column p {
+  margin-bottom: 10px;
   text-align: center;
 }
 
 .schedule {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 50px;
   text-align: center;
 }
 
 /*  STYLING FOR REGISTER  */
 .register-title h1 {
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: center;
-  color: var(--text-color); 
-}
-/*  STYLING FOR FAQs  */
-.faq-title h1 {
-  margin-bottom: 20px;
-  margin-top: 20px;
-  text-align: center;
+  font-weight: lighter;
   color: var(--text-color); 
 }
 
-/*  STYLING FOR ABOUT US  */
-.about-title h1 {
-  margin-bottom: 20px;
-  margin-top: 10px;
-  text-align: center;
-  color: var(--text-color); 
-}
-/* Style each section header */
-
-/* Add spacing and background for event info */
-.event-info {
+.reg-info {
   padding: 40px;
-  background-color: var(--second-background); /* Background color for sections */
-  border-radius: 8px; /* Rounded corners for sections */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow for a lifted effect */
+  /* background-color: var(--second-background); */
+  /* border-radius: 8px; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
   margin: 0 auto; /* Center the section horizontally */
+  margin-bottom: 20px;
   width: 80%;
   max-width: 800px; /* Adjust the max-width as needed */
+  
 }
 
-/* Add margin to the paragraph in event info */
-.event-info p {
+.reg-info h1 {
+  margin-bottom: 5px;
+}
+
+.reg-info p {
   margin-bottom: 20px;
 }
 
-/* Add styling to unordered list in event info */
-.event-info ul {
+.reg-info ul {
   list-style-type: disc;
   padding-left: 20px;
 }
 
-/* Style the registration button section */
+
 .registration-button {
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  /* margin-bottom: 20px; */
 }
 
 .register-btn {
   display: inline-block;
-  padding: 15px 30px;
-  background-color: var(--button-color);
-  color: var(--text-color);
-  border: none;
+  padding: 10px 25px;
+  background: linear-gradient(180deg, rgba(239,81,34,1) 0%, rgba(194,66,28,1) 69%, rgba(151,35,0,1) 100%);
+  color: rgb(255, 255, 255);
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   cursor: pointer;
   text-decoration: none;
-  transition: background-color 0.3s, color 0.3s;
+  transition: , border-color 0.1s, color 0.1s;
 }
 
 .register-btn:hover {
-  background-color: var(--button-hover-color);
-  color: var(--button-color);
+  background-color: var(--second-background);
+  background: rgb(151, 35, 0, 1);
+  border-color:  rgb(151, 35, 0, 1);
+  color: var(--secondary-color);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.527);
 }
 
-/* Style the FAQ sections */
+/*  STYLING FOR FAQs  */
+.faq-title h1 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--text-color);
+  font-weight: lighter;
+}
+
+
 .general-section, .participation-section {
   padding: 40px;
-  background-color: var(--second-background); /* Background color for sections */
-  border-radius: 8px; /* Rounded corners for sections */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow for a lifted effect */
-  margin: 0 auto; /* Center the section horizontally */
+  background-color: var(--background); 
+  /* border-radius: 8px; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  margin: 0 auto;
   width: 80%;
-  max-width: 800px; /* Adjust the max-width as needed */
+  max-width: 800px; 
 }
 
-/* Add space between FAQ sections */
-.general-section {
-  margin-bottom: 40px; /* Space below General Questions section */
+
+.general-questions h2, .participation-questions h2 {
+  font-weight: lighter;
+  padding: 10px;
+  color: var(--text-color);  
+
 }
 
-.participation-section {
-  margin-top: 40px; /* Space above Questions About Participation section */
+.general-questions p, .participation-questions p {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-/* Style the footer */
+.faq-contact {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+}
+
+
+/*  STYLING FOR ABOUT US  */
+.about-title h1 {
+  margin-bottom: 20px;
+  margin-top: 30px;
+  text-align: center;
+  color: var(--text-color); 
+  font-weight: lighter;
+}
+
+.about-info {
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  width: 80%;
+  max-width: 800px;
+  display: flex; /* Display children (columns) in a row */
+  justify-content: space-between; /* Distribute columns evenly */
+  margin-bottom: 20px;
+}
+
+.about-column {
+  flex: 1; /* Each column takes equal space */
+  margin: 0 10px; /* Adjust space between columns */
+}
+
+.about-column h1, .about-column h2 {
+  margin-bottom: 10px;
+
+}
+
+.about-column p {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+
+
 footer {
   padding-top: 20px;
   padding-left: 20px;
   padding-bottom: 20px;
-  text-align: left;
+  font-size: 14px;
+  font-weight:  normal;
+  text-align: center;
+
   color: var(--background);
   background-color: var(--text-color);
- 
 }
