@@ -9,11 +9,22 @@
   font-family: "Poppins", sans-serif; 
 }
 
-:root {
+/*:root {
   --background: rgb(255, 241, 224);
   --second-background: rgb(0, 0, 0);
   --primary-color: #00ff62;
   --secondary-color: #f4f4f4; 
+  --text-color: rgb(57, 18, 6);
+  --button-color: #EF5122;
+  --button-hover-color: #972300;
+  --text-hover-color: #ffffff;
+}
+*/
+:root {
+  --background: rgb(255, 241, 224);
+  --second-background: rgb(240, 240, 240); /* Change from black to a light grey */
+  --primary-color: #00ff62;
+  --secondary-color: #f4f4f4;
   --text-color: rgb(57, 18, 6);
   --button-color: #EF5122;
   --button-hover-color: #972300;
@@ -62,6 +73,19 @@ header .nav-item a:hover {
 }
 
 /*  STYLING FOR HOME  */
+/* header for logo 
+
+/* Adjust the logo container and image styles */
+.logo-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.logo {
+  max-width: 200px; /* Adjust as needed */
+  height: auto;
+}
+
 /* .banner-header {
   text-align: center;
   padding: 20px 0;
@@ -290,3 +314,40 @@ footer {
   color: var(--background);
   background-color: var(--text-color);
 }
+
+
+/* Schedule Table CSS */
+/* Style the schedule table */
+.schedule-container {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center the table within the container */
+}
+
+.schedule-table {
+  width: 100%;
+  max-width: 800px; /* Set the max-width for the table */
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.schedule-table th, .schedule-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.schedule-table th {
+  background-color: var(--button-color); /* Orange color for the header */
+  color: var(--text-color); /* Ensure text is readable against orange */
+}
+
+.schedule-table tr:nth-child(even) {
+  background-color: var(--second-background); /* Check the value of this variable */
+}
+
+.schedule-table tr:hover {
+  background-color: var(--button-color); /* Orange color on hover */
+  color: var(--text-color); /* Ensure text remains readable */
+}
+
