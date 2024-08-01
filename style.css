@@ -34,12 +34,10 @@
 body {
   background-color: var(--background);
   color: var(--text-color);
-  padding-top: 10px;
-  
 }
 
 header {
-  background-color: var(--background);
+  background-color: var(--text-color);
   padding: 10px 0;
 }
 
@@ -59,18 +57,28 @@ header .nav-item {
 
 header .nav-item a {
   display: inline-block;
-  color: var(--text-color);
+  color: var(--background);
   text-decoration: none;
-  padding: 10px;
+  padding: 5px;
+
   font-size: 12px;
+  font-weight: bolder;
   transition: background-color 0.3s, color 0.3s;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
 }
 
 header .nav-item a:hover {
-  background-color: var(--text-color);
-  color: var(--background);
+  background-color: var(--background);
+  color: var(--text-color);
   border-radius: 5px;
+  font-weight: bolder;
+  font-size: 12px;
 }
+
+
+
 
 /*  STYLING FOR HOME  */
 /* header for logo 
@@ -82,23 +90,16 @@ header .nav-item a:hover {
 }
 
 .logo {
-  max-width: 200px; /* Adjust as needed */
+  max-width: 120px; /* Adjust as needed */
   height: auto;
 }
 
-/* .banner-header {
-  text-align: center;
-  padding: 20px 0;
-} */
 .banner-header {
   padding: 5px;
   text-align: center;
   background-color: var(--primary-color);
-  /* border-radius: 8px;  */
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);  */
   margin: 0 auto; 
-  /* width: 100%; */
-  /* max-width: 1000px;  */
+
 }
 
 .banner-header h2 {
@@ -107,19 +108,16 @@ font-size: 18px;
 }
 
 .jam-img {
-  position: relative;
+  /* position: relative; */
   overflow: hidden;
-  height: 500px; /* Adjust as needed */
-  width: 100%;
   margin: 0 auto; 
-
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .slider {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   
 }
 
@@ -198,15 +196,83 @@ font-size: 18px;
   background-color: #717171;
 }
 
+/* Style for the floating message container */
+.floating-message {
+  position: fixed; /* Fixed position to stay in place */
+  bottom: 20px; /* Position from the bottom */
+  right: 20px; /* Position from the right */
+  z-index: 1000; /* Ensure it's above other content */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth transition */
+  transform: translateY(100%); /* Initially hidden below the viewport */
+  opacity: 0; /* Initially hidden */
+}
+
+/* Style for the message box */
+
+
+/* Style for the close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: var(--text-color); /* Match close button color to theme */
+}
+
+/* Close button hover effect */
+.close-btn:hover {
+  color: red; /* Change color on hover */
+}
+
+/* To show the floating message */
+.floating-message.show {
+  transform: translateY(0); /* Move into view */
+  opacity: 1; /* Fade in */
+}
+
+
+/* Optional: You can add a hidden class to handle visibility */
+.hidden {
+  display: none;
+}
+
+
+/* Style for the close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: var(--text-color); /* Match close button color to theme */
+}
+
+/* Close button hover effect */
+.close-btn:hover {
+  color: red; /* Change color on hover */
+}
+
+/* Optional: You can add a hidden class to handle visibility */
+.hidden {
+  display: none;
+}
 
 .our-message {
-  padding: 20px;
-  background-color: var(--background);
-  border-radius: 8px; 
+  padding: 15px;
+  background-color: white;
+  border-radius: 5px; 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
   margin: 0 auto; 
   max-width: 1000px; 
+  margin-bottom: 2px;
+  margin-top: 2px;
 }
+
 
 .our-message h3 {
   margin-bottom: 5px;
@@ -219,30 +285,42 @@ font-size: 18px;
 }
 
 .format-info {
-  padding: 50px;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
-  margin: 0 auto;
-  width: 100%;
+  padding: 20px;
+  margin: 0 auto; 
   max-width: 1000px;
-  display: flex; /* Display children (columns) in a row */
-  justify-content: space-between; /* Distribute columns evenly */
+  display: flex; 
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  
 }
 
 .format-column {
-  flex: 1; /* Each column takes equal space */
-  margin: 0 10px; /* Adjust space between columns */
-  /* text-align: center; */
+  padding: 15px;
+  flex: 1 1 200px; /* Each column takes equal space */
+  margin: 20px; /* Adjust space between columns */
+  text-align: center;
+  box-sizing: border-box;
+  background-color: rgb(222, 205, 184);
+  border-radius: 10px; 
+  border-style: inset;
+
 }
+
+
+
 
 .format-column h1{
   margin-bottom: 10px;
   text-align: center;
   font-size: 25px;
+  color: var(--text-color);
 }
 
 .format-column p {
   margin-bottom: 10px;
   text-align: center;
+  color: var(--text-color);
 }
 
 .schedule {
@@ -262,14 +340,11 @@ font-size: 18px;
 
 .reg-info {
   padding: 40px;
-  /* background-color: var(--second-background); */
-  /* border-radius: 8px; */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
-  margin: 0 auto; /* Center the section horizontally */
+  margin: 0 auto;
   margin-bottom: 20px;
   width: 80%;
   max-width: 800px; /* Adjust the max-width as needed */
-  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);   
 }
 
 .reg-info h1 {
@@ -302,7 +377,7 @@ font-size: 18px;
   font-weight: bold;
   cursor: pointer;
   text-decoration: none;
-  transition: , border-color 0.1s, color 0.1s;
+  transition: border-color 0.1s, color 0.1s;
 }
 
 .register-btn:hover {
@@ -325,12 +400,12 @@ font-size: 18px;
 
 .general-section, .participation-section {
   padding: 40px;
-  background-color: var(--background); 
-  /* border-radius: 8px; */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
   margin: 0 auto;
   width: 80%;
   max-width: 800px; 
+  background-color: var(--background); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+
 }
 
 
@@ -365,13 +440,14 @@ font-size: 18px;
 
 .about-info {
   padding: 40px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin: 0 auto;
+  margin-bottom: 20px;
   width: 80%;
   max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   display: flex; /* Display children (columns) in a row */
   justify-content: space-between; /* Distribute columns evenly */
-  margin-bottom: 20px;
+
 }
 
 .about-column {
@@ -439,3 +515,130 @@ footer {
   color: var(--text-color); /* Ensure text remains readable */
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  header .nav-item a {
+    display: inline-block;
+    color: var(--background);
+    text-decoration: none;
+    padding: 2px;
+    margin-top: 25px;
+    font-size: 12px;
+    font-weight: bolder;
+    transition: background-color 0.3s, color 0.3s;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+  }
+    
+    .slide {
+      min-width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding-left: 0px;
+      padding-right: 0px;
+      background-color: rgb(222, 205, 184);
+    }
+    
+    .slides img {
+      width: 100%;
+      height: auto;
+      display: flex;
+      margin: 0 auto;
+    }
+    .prev, .next {
+      padding: 10px; /* Reduce padding for smaller buttons */
+      font-size: 14px; /* Reduce font size */
+      margin-top: -16px; /* Adjust margin to better align the buttons */
+    }
+    
+    .prev {
+      left: 0;
+    }
+    
+    .next {
+      right: 0;
+    }
+    
+    .dots {
+      text-align: center;
+      position: absolute;
+      bottom: 5px;
+      width: 100%;
+      z-index: 1000;
+    }
+    
+    .dot {
+      display: inline-block;
+      height: 8px;
+      width: 8px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      transition: background-color 0.6s ease;
+    }
+    
+    .dot.active {
+      background-color: #717171;
+    }
+  
+    .format-info {
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+    
+    .format-column {
+      flex: 1 1 100%; /* Allow columns to take full width of the container on smaller screens */
+      margin: 10px 0; /* Adjust spacing for stacked columns */
+    }
+  
+    /* Schedule Table CSS */
+    /* Style the schedule table */
+  
+    .schedule h1 {
+      font-size: 15px;
+    }
+    .schedule-table th, .schedule-table td {
+      padding: 8px 4px; /* Increase left and right padding while decreasing top and bottom padding */
+      font-size: 0.5rem; /* Reduce the font size for better readability on small screens */
+    }
+    
+    .schedule-table th {
+      font-size: 0.1rem; /* Slightly smaller font size for table headers */
+    }
+  
+    .banner-header {
+      padding: 5px; /* Reduce padding for smaller screens */
+    
+    }
+    
+    .banner-header h2 {
+    font-size: 12px;
+    }
+  
+    .floating-message {
+      bottom: 10px; /* Adjust position from the bottom for mobile */
+      right: 10px; /* Position from the right */
+      left: 10px;
+      z-index: 1000; /* Ensure it's above other content */
+      transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth transition */
+      transform: translateY(100%); /* Initially hidden below the viewport */
+      opacity: 0; /* Initially hidden */
+    }
+  
+  
+    .our-message {
+      border-radius: 5px;
+    }
+    
+    .our-message h3 {
+      font-size: 15px;
+      border-radius: 8px; /* Rounded corners */
+    }
+    
+    .our-message p {
+      font-size: 10px;
+    }
+    
+  }

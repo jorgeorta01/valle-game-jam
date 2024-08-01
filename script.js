@@ -39,5 +39,22 @@ dots.forEach((dot, index) => {
   });
 });
 
+// script.js
+document.addEventListener('DOMContentLoaded', () => {
+  const closeButton = document.querySelector('.close-btn');
+  const floatingMessage = document.querySelector('.floating-message');
+
+  // Add class to show the floating message
+  floatingMessage.classList.add('show');
+
+  closeButton.addEventListener('click', () => {
+    floatingMessage.classList.remove('show');
+    setTimeout(() => {
+      floatingMessage.classList.add('hidden'); // Optionally hide element completely
+    }, 300); // Duration of the transition
+  });
+});
+
+
 // Initialize
 showSlide(slideIndex);
