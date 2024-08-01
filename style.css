@@ -411,15 +411,12 @@ font-size: 18px;
 
 .general-questions h2, .participation-questions h2 {
   font-weight: lighter;
-  padding: 10px;
+  padding-top: 10px;
   color: var(--text-color);  
 
 }
 
-.general-questions p, .participation-questions p {
-  margin-left: 20px;
-  margin-right: 20px;
-}
+
 
 .faq-contact {
   text-align: center;
@@ -639,6 +636,92 @@ footer {
     
     .our-message p {
       font-size: 10px;
+    }
+    
+    .register-title h1, .faq-title h1, .about-title h1 {
+      font-size: 20px;
+    }
+
+    .register-btn {
+      font-size: 10px;
+
+    }
+
+    .reg-info {
+      /* margin: 0 auto; */
+      padding: 20px;
+      width: 90%;
+      max-width: 300px; 
+    }
+    
+    .reg-info h1 {
+      font-size: 16px;
+    }
+
+    .reg-info p {
+      font-size: 10px;
+    }
+
+
+    .general-section, .participation-section {
+      margin: 0 auto;
+      padding: 20px;
+      width: 90%;
+      max-width: 300px; 
+
+    
+    }
+    .general-section h2, .participation-section h2 {
+      font-size: 16px;
+      text-align: left;
+    }
+
+    .general-questions h2, .participation-questions h2 {
+      font-size: 16px;
+      text-align: left;
+      margin-left: 1px;
+      margin-right: 1px;
+      
+    }
+
+    .general-questions p, .participation-questions p {
+      font-size: 10px;
+      text-align: left;
+      margin-left: 1px;
+      margin-right: 1px;
+    }
+
+    .faq-contact {
+      font-size: 10px;
+    }
+
+    .about-info {
+      margin: 0 auto;
+      padding: 20px;
+      width: 90%;
+      max-width: 300px; 
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+    }
+
+    .about-column {
+      flex: 1; /* Each column takes equal space */
+      margin: 0 10px; /* Adjust space between columns */
+    }
+    
+    .about-column h1, .about-column h2 {
+      font-size: 16px;
+      text-align: left;
+    
+    }
+    
+    .about-column p {
+      font-size: 10px;
+    }
+    
+    .logo {
+      max-width: 90px; /* Adjust as needed */
+      height: auto;
     }
     
   }
