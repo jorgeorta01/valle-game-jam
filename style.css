@@ -23,7 +23,7 @@
 :root {
   --background: rgb(255, 241, 224);
   --second-background: rgb(240, 240, 240); /* Change from black to a light grey */
-  --primary-color: #fff200;
+  --primary-color: rgb(184, 222, 187);
   --secondary-color: #f4f4f4;
   --text-color: rgb(57, 18, 6);
   --button-color: #EF5122;
@@ -301,11 +301,13 @@ font-size: 18px;
   margin: 20px; /* Adjust space between columns */
   text-align: center;
   box-sizing: border-box;
-  background-color: rgb(222, 205, 184);
+  background-color: rgb(184, 222, 187);
   border-radius: 10px; 
   border-style: inset;
+  border-color: #7dd169;
 
 }
+
 
 
 
